@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-int test(int liste[])
-{
-    for (int i = 0; i < 7; i++)
-    {
-        if (i % 2 == 0 && liste[i] % 2 == 1)
-        {
-            printf("%d", liste[i]);
+void test(int liste[]) {
+    for (int i = 0; i < 7; i++) {
+        if (i % 2 == 0 && liste[i] % 2 == 1) {
+            printf("%d | ", liste[i]);
         }
     }
-    return 0;
 }
 
 void saisie(int liste[])
@@ -17,7 +13,7 @@ void saisie(int liste[])
     int valeurs;
     for (int i = 0; i < 7; i++)
     {
-        printf("Saisir valeurs : ");
+        printf("Saisir valeurs :");
         scanf("%d", &valeurs);
         liste[i] = valeurs;
     }
