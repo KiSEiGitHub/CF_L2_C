@@ -129,6 +129,19 @@ ex2/fast:
 .PHONY : ex2/fast
 
 #=============================================================================
+# Target rules for targets named ex9
+
+# Build rule for target.
+ex9: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex9
+.PHONY : ex9
+
+# fast build rule for target.
+ex9/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/build
+.PHONY : ex9/fast
+
+#=============================================================================
 # Target rules for targets named ex1
 
 # Build rule for target.
@@ -226,6 +239,30 @@ Exercice8/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/Exercice8/main.c.s
 .PHONY : Exercice8/main.c.s
 
+Exercice9/main.obj: Exercice9/main.c.obj
+.PHONY : Exercice9/main.obj
+
+# target to build an object file
+Exercice9/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/Exercice9/main.c.obj
+.PHONY : Exercice9/main.c.obj
+
+Exercice9/main.i: Exercice9/main.c.i
+.PHONY : Exercice9/main.i
+
+# target to preprocess a source file
+Exercice9/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/Exercice9/main.c.i
+.PHONY : Exercice9/main.c.i
+
+Exercice9/main.s: Exercice9/main.c.s
+.PHONY : Exercice9/main.s
+
+# target to generate assembly for a file
+Exercice9/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex9.dir\build.make CMakeFiles/ex9.dir/Exercice9/main.c.s
+.PHONY : Exercice9/main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -237,6 +274,7 @@ help:
 	@echo ... ex1
 	@echo ... ex2
 	@echo ... ex8
+	@echo ... ex9
 	@echo ... Exercice1/main.obj
 	@echo ... Exercice1/main.i
 	@echo ... Exercice1/main.s
@@ -246,6 +284,9 @@ help:
 	@echo ... Exercice8/main.obj
 	@echo ... Exercice8/main.i
 	@echo ... Exercice8/main.s
+	@echo ... Exercice9/main.obj
+	@echo ... Exercice9/main.i
+	@echo ... Exercice9/main.s
 .PHONY : help
 
 

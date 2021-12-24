@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,7 +35,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -59,6 +61,13 @@
 					"id" : "ex8::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ex8-Debug-daf9ee64eee62d2506a2.json",
 					"name" : "ex8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex9-Debug-1da52778747e9e3b3f6c.json",
+					"name" : "ex9",
 					"projectIndex" : 0
 				}
 			]
