@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define Length(x) (sizeof(x) / sizeof((x)[0])) // Array.length en gros
 
 int test(int liste[])
 {
@@ -10,6 +9,7 @@ int test(int liste[])
             printf("%d", liste[i]);
         }
     }
+    return 0;
 }
 
 void saisie(int liste[])
