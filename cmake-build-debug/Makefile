@@ -167,6 +167,19 @@ ex8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex8.dir\build.make CMakeFiles/ex8.dir/build
 .PHONY : ex8/fast
 
+#=============================================================================
+# Target rules for targets named ex10
+
+# Build rule for target.
+ex10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex10
+.PHONY : ex10
+
+# fast build rule for target.
+ex10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/build
+.PHONY : ex10/fast
+
 Exercice1/main.obj: Exercice1/main.c.obj
 .PHONY : Exercice1/main.obj
 
@@ -190,6 +203,30 @@ Exercice1/main.s: Exercice1/main.c.s
 Exercice1/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex1.dir\build.make CMakeFiles/ex1.dir/Exercice1/main.c.s
 .PHONY : Exercice1/main.c.s
+
+Exercice10/main.obj: Exercice10/main.c.obj
+.PHONY : Exercice10/main.obj
+
+# target to build an object file
+Exercice10/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/Exercice10/main.c.obj
+.PHONY : Exercice10/main.c.obj
+
+Exercice10/main.i: Exercice10/main.c.i
+.PHONY : Exercice10/main.i
+
+# target to preprocess a source file
+Exercice10/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/Exercice10/main.c.i
+.PHONY : Exercice10/main.c.i
+
+Exercice10/main.s: Exercice10/main.c.s
+.PHONY : Exercice10/main.s
+
+# target to generate assembly for a file
+Exercice10/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/Exercice10/main.c.s
+.PHONY : Exercice10/main.c.s
 
 Exercice2/main.obj: Exercice2/main.c.obj
 .PHONY : Exercice2/main.obj
@@ -272,12 +309,16 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ex1
+	@echo ... ex10
 	@echo ... ex2
 	@echo ... ex8
 	@echo ... ex9
 	@echo ... Exercice1/main.obj
 	@echo ... Exercice1/main.i
 	@echo ... Exercice1/main.s
+	@echo ... Exercice10/main.obj
+	@echo ... Exercice10/main.i
+	@echo ... Exercice10/main.s
 	@echo ... Exercice2/main.obj
 	@echo ... Exercice2/main.i
 	@echo ... Exercice2/main.s

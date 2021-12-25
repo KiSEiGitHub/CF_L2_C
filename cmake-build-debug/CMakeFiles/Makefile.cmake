@@ -50,4 +50,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ex9.dir/DependInfo.cmake"
   "CMakeFiles/ex1.dir/DependInfo.cmake"
   "CMakeFiles/ex8.dir/DependInfo.cmake"
+  "CMakeFiles/ex10.dir/DependInfo.cmake"
   )
