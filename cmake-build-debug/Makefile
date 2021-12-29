@@ -206,6 +206,19 @@ ex4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/build
 .PHONY : ex4/fast
 
+#=============================================================================
+# Target rules for targets named ex5
+
+# Build rule for target.
+ex5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex5
+.PHONY : ex5
+
+# fast build rule for target.
+ex5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex5.dir\build.make CMakeFiles/ex5.dir/build
+.PHONY : ex5/fast
+
 Exercice1/main.obj: Exercice1/main.c.obj
 .PHONY : Exercice1/main.obj
 
@@ -326,6 +339,30 @@ Exercice4/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Exercice4/main.c.s
 .PHONY : Exercice4/main.c.s
 
+Exercice5/main.obj: Exercice5/main.c.obj
+.PHONY : Exercice5/main.obj
+
+# target to build an object file
+Exercice5/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex5.dir\build.make CMakeFiles/ex5.dir/Exercice5/main.c.obj
+.PHONY : Exercice5/main.c.obj
+
+Exercice5/main.i: Exercice5/main.c.i
+.PHONY : Exercice5/main.i
+
+# target to preprocess a source file
+Exercice5/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex5.dir\build.make CMakeFiles/ex5.dir/Exercice5/main.c.i
+.PHONY : Exercice5/main.c.i
+
+Exercice5/main.s: Exercice5/main.c.s
+.PHONY : Exercice5/main.s
+
+# target to generate assembly for a file
+Exercice5/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex5.dir\build.make CMakeFiles/ex5.dir/Exercice5/main.c.s
+.PHONY : Exercice5/main.c.s
+
 Exercice8/main.obj: Exercice8/main.c.obj
 .PHONY : Exercice8/main.obj
 
@@ -387,6 +424,7 @@ help:
 	@echo ... ex11
 	@echo ... ex2
 	@echo ... ex4
+	@echo ... ex5
 	@echo ... ex8
 	@echo ... ex9
 	@echo ... Exercice1/main.obj
@@ -404,6 +442,9 @@ help:
 	@echo ... Exercice4/main.obj
 	@echo ... Exercice4/main.i
 	@echo ... Exercice4/main.s
+	@echo ... Exercice5/main.obj
+	@echo ... Exercice5/main.i
+	@echo ... Exercice5/main.s
 	@echo ... Exercice8/main.obj
 	@echo ... Exercice8/main.i
 	@echo ... Exercice8/main.s
