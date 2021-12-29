@@ -193,6 +193,19 @@ ex10/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex10.dir\build.make CMakeFiles/ex10.dir/build
 .PHONY : ex10/fast
 
+#=============================================================================
+# Target rules for targets named ex4
+
+# Build rule for target.
+ex4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ex4
+.PHONY : ex4
+
+# fast build rule for target.
+ex4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/build
+.PHONY : ex4/fast
+
 Exercice1/main.obj: Exercice1/main.c.obj
 .PHONY : Exercice1/main.obj
 
@@ -289,6 +302,30 @@ Exercice2/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex2.dir\build.make CMakeFiles/ex2.dir/Exercice2/main.c.s
 .PHONY : Exercice2/main.c.s
 
+Exercice4/main.obj: Exercice4/main.c.obj
+.PHONY : Exercice4/main.obj
+
+# target to build an object file
+Exercice4/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Exercice4/main.c.obj
+.PHONY : Exercice4/main.c.obj
+
+Exercice4/main.i: Exercice4/main.c.i
+.PHONY : Exercice4/main.i
+
+# target to preprocess a source file
+Exercice4/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Exercice4/main.c.i
+.PHONY : Exercice4/main.c.i
+
+Exercice4/main.s: Exercice4/main.c.s
+.PHONY : Exercice4/main.s
+
+# target to generate assembly for a file
+Exercice4/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ex4.dir\build.make CMakeFiles/ex4.dir/Exercice4/main.c.s
+.PHONY : Exercice4/main.c.s
+
 Exercice8/main.obj: Exercice8/main.c.obj
 .PHONY : Exercice8/main.obj
 
@@ -349,6 +386,7 @@ help:
 	@echo ... ex10
 	@echo ... ex11
 	@echo ... ex2
+	@echo ... ex4
 	@echo ... ex8
 	@echo ... ex9
 	@echo ... Exercice1/main.obj
@@ -363,6 +401,9 @@ help:
 	@echo ... Exercice2/main.obj
 	@echo ... Exercice2/main.i
 	@echo ... Exercice2/main.s
+	@echo ... Exercice4/main.obj
+	@echo ... Exercice4/main.i
+	@echo ... Exercice4/main.s
 	@echo ... Exercice8/main.obj
 	@echo ... Exercice8/main.i
 	@echo ... Exercice8/main.s
